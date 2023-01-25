@@ -18,9 +18,23 @@ System.Console.WriteLine($"[{String.Join(", ", some_func(new_array_2))}]");
 System.Console.WriteLine($"[{String.Join(", ", some_func(new_array_3))}]");
 
 
+// Вариант 1
+
+// string[] some_func(string[] my_array)
+// {
+//     string text = String.Empty;
+//     foreach (var item in my_array)
+//     {
+//         if (item.Length <= 3)
+//         {
+//             text += item + " ";
+//         }
+//     }
+//     return text.Split()[..^1];
+// }
 
 
-
+// Вариант 2
 
 string[] some_func(string[] my_array)
 {
